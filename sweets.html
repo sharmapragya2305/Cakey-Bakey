@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweets</title>
+    <link rel ="Stylesheet" href="style3.css">
+    <style>
+        #btn:hover{
+        background-color: aqua;
+        color:black;
+        }
+        #btn:active{
+            box-shadow:5px  7px 10px rgb(45, 126, 126);
+        }
+        #order{
+            width:100%; 
+            color:white;
+        }
+        #order:hover{
+            background-color: aquamarine;
+            color:black;
+        }
+        #order:active{
+            box-shadow: 10px 20px 15px rgb(18, 39, 41);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweets</h1>
+    </header>
+    <main>
+        <div class="bakers">
+            <h1>Misht Sweets Ferrero Rocher Combo </h1>
+            <img src="ferro .jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; MHST<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 1250 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select><br><br>
+            Message Box: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" id="txtbox"  name="Message Box">
+            <p>
+                <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1>Kaju Katlis </h1>
+            <img src="kaju katli.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; BARJ<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 1999 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select><br><br>
+            Message Box: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" id="txtbox"  name="Message Box">
+            <p>
+                <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1>Laddoos </h1>
+            <img src="laddoo.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; LDWS<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 800 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select><br><br>
+            Message Box: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" id="txtbox"  name="Message Box">
+            <p>
+                <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1>Flavoured Kaju Katli </h1>
+            <img src="flavoured kk.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; FLKK<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 1500 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select><br><br>
+            Message Box: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" id="txtbox"  name="Message Box">
+            <p>
+                <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1>Snickers Chocolate Vase </h1>
+            <img src="snickers choc.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; SCVT<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 1500 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select><br><br>
+            Message Box: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" id="txtbox"  name="Message Box">
+            <p>
+                <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1>Dodha Barfi </h1>
+            <img src="dodha.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; DDHA<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 1250 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select><br><br>
+            Message Box: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" id="txtbox"  name="Message Box">
+            <p>
+                <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1>Milk Cake </h1>
+            <img src="milk cake.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; MLCK<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 400 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select><br><br>
+            Message Box: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" id="txtbox"  name="Message Box">
+            <p>
+                <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1>Anjeer Dry Fruit Barfi </h1>
+            <img src="anjeer barfi.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; ANDF<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 949 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select><br><br>
+            Message Box: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" id="txtbox"  name="Message Box">
+            <p>
+                <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+        </div>
+        <button value="Order"id="order" onclick="Order()">Order</button>
+        <br>
+        <script>
+            var a=0
+            function validate(){
+            a=a+1;
+            }
+            function Order(){
+                if (a==0){
+                    alert("Please select any item first");
+                }
+                if(a!=0){
+                    alert("Order Sent...........")
+                }
+            }
+    
+    </script>
+    </body> 
+    </html>   

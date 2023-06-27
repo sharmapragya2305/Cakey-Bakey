@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link rel ="Stylesheet" href="style1.css">
+    <style>
+        #btn:hover{
+        background-color: aqua;
+        color:black;
+        }
+        #btn:active{
+            box-shadow:5px  7px 10px rgb(45, 126, 126);
+        }
+        #order{
+            width:100%; 
+            color:white;
+        }
+        #order:hover{
+            background-color: aquamarine;
+            color:black;
+        }
+        #order:active{
+            box-shadow: 10px 20px 15px rgb(18, 39, 41);
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Cakes</h1>
+    </header>
+    <main>
+        <div class="bakers">
+            <h1>Artistic Chocolate Pleasure </h1>
+            <img src="cake1.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; BELL<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 500 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Cake Type: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <input type= "radio" name="Cake Type" value="Egg"> Egg
+            <input type= "radio" name="Cake Type" value="Eggless"> Eggless<br><br>
+            Cake Size: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 1/2 Kg </option>
+                
+                <option> 1 Kg </option>
+                
+                <option> 2 Kg </option>
+                
+                <option> 3 Kg </option>
+            </select><br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select>
+            <p>
+                
+            <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+
+
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1> Butterscotch Overloaded Cake </h1>
+            <img src="butterscotch.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; ROCK<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 600 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Cake Type: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <input type= "radio" name="Cake Type" value="Egg"> Egg
+            <input type= "radio" name="Cake Type" value="Eggless"> Eggless<br><br>
+            Cake Size: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 1/2 Kg </option>
+                
+                <option> 1 Kg </option>
+                
+                <option> 2 Kg </option>
+                
+                <option> 3 Kg </option>
+            </select><br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select>
+            <p>
+                
+            <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+
+
+
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1> Fruit Cake </h1>
+            <img src="fruit cake.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; R564<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 700 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Cake Type: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <input type= "radio" name="Cake Type" value="Egg"> Egg
+            <input type= "radio" name="Cake Type" value="Eggless"> Eggless<br><br>
+            Cake Size: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 1/2 Kg </option>
+                
+                <option> 1 Kg </option>
+                
+                <option> 2 Kg </option>
+                
+                <option> 3 Kg </option>
+            </select><br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select>
+            <p>
+                
+            <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+
+
+
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1> Mazipian Cake </h1>
+            <img src="marzipian.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; M108<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 400 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Cake Type: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <input type= "radio" name="Cake Type" value="Egg"> Egg
+            <input type= "radio" name="Cake Type" value="Eggless"> Eggless<br><br>
+            Cake Size: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 1/2 Kg </option>
+                
+                <option> 1 Kg </option>
+                
+                <option> 2 Kg </option>
+                
+                <option> 3 Kg </option>
+            </select><br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select>
+            <p>
+                
+            <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+
+
+
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1> Vanilla Gold Cake </h1>
+            <img src="vanilla gold.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; V345<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 699 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Cake Type: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <input type= "radio" name="Cake Type" value="Egg"> Egg
+            <input type= "radio" name="Cake Type" value="Eggless"> Eggless<br><br>
+            Cake Size: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 1/2 Kg </option>
+                
+                <option> 1 Kg </option>
+                
+                <option> 2 Kg </option>
+                
+                <option> 3 Kg </option>
+            </select><br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select>
+            <p>
+                
+            <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+
+
+
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1> Chocolate Strawberry cake </h1>
+            <img src="chocolate strawberry.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; CS45<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 799 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Cake Type: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <input type= "radio" name="Cake Type" value="Egg"> Egg
+            <input type= "radio" name="Cake Type" value="Eggless"> Eggless<br><br>
+            Cake Size: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 1/2 Kg </option>
+                
+                <option> 1 Kg </option>
+                
+                <option> 2 Kg </option>
+                
+                <option> 3 Kg </option>
+            </select><br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select>
+            <p>
+                
+            <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+
+
+
+        </div>
+        <hr>
+        <div class="bakers">
+            <h1> Balloon cake confetti with Cupcakes </h1>
+            <img src="balloon cake.jpg" align="left" width="400px" height="400px">
+            <h2>
+                Product Code: &nbsp; &nbsp; B564<br>
+                Availability: &nbsp; &nbsp; In stock
+            </h2>
+            <h1> Rs 900 </h1>
+            Available Option: &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "radio" name="Available Option" value="Daytime"> Daytime
+            
+            <input type= "radio" name="Available Option" value="Midnight"> Midnight<br><br>
+            Cake Type: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <input type= "radio" name="Cake Type" value="Egg"> Egg
+            <input type= "radio" name="Cake Type" value="Eggless"> Eggless<br><br>
+            Cake Size: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 1/2 Kg </option>
+                
+                <option> 1 Kg </option>
+                
+                <option> 2 Kg </option>
+                
+                <option> 3 Kg </option>
+            </select><br><br>
+            Order Quantity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <select>
+                <option> 1 </option>
+                
+                <option> 2 </option>
+                
+                <option> 3 </option>
+                
+                <option> 4 </option>
+                
+                <option> 5 </option>
+            </select><br><br>
+            Delivery Date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type= "text" size="10" name="Delivery Date"><br><br>
+            Delivery Time: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <select>
+                <option> 9:00 AM to 12:00 PM </option>
+                <option> 12:00 PM to 3:00 PM </option>
+                <option> 6:00 PM to 12:00 AM </option>
+
+
+            </select>
+            <p>
+                
+            <button onclick="validate()" id="btn"> Add to Cart</button>
+            </p>
+
+
+
+        </div>
+        <button value="Order"id="order" onclick="Order()">Order</button>
+        <br>
+    </main>
+    <script>
+        var a=0
+        function validate(){
+        a=a+1;
+        }
+        function Order(){
+            if (a==0){
+                alert("Please select any item first");
+            }
+            if(a!=0){
+                alert("Order Sent...........")
+            }
+        }
+
+</script>
+    
+    
+</body>
+</html>
